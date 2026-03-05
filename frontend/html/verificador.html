@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/home_style.css" />
+    <link rel="stylesheet" href="../css/verificador.css" />
+    <link rel="stylesheet" href="../css/result_verificacao.css" />
   </head>
   <body>
     <div class="header">
@@ -22,6 +24,70 @@
       />
       <button><a href="home.html">Home</a></button>
       <button>Verificador</button>
+    </div>
+
+    <div class="container">
+      <h1 id="title-glos">Insira o link que deseja verificar</h1>
+
+      <div class="campo-link">
+        <input type="url" placeholder="Cole seu link aqui" />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="divisor"></div>
+
+    <div class="result_verificacao">
+      <h1 id="title-glos">Resultado da Verificação</h1>
+
+      <div class="card_result">
+        <div class="status-valido">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="green"
+            stroke-width="2"
+          >
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </div>
+        <p>Status: Seguro</p>
+        <p>Motivo: O link passou por todas as verificações de segurança.</p>
+      </div>
+
+        <div class="card_result">
+            <div class="status-invalido">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="red"
+                stroke-width="2"
+            >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+            </div>
+            <p>Status: Suspeito</p>
+            <p>
+            Motivo: O link contém elementos suspeitos, como domínio desconhecido
+            ou falta de HTTPS.
+            </p>
     </div>
   </body>
 </html>
