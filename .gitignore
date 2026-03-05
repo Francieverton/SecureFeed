@@ -1,9 +1,23 @@
 
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+
 node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
 
 dist/
@@ -11,40 +25,45 @@ build/
 .out/
 .next/
 .cache/
-
-
-logs
-*.log
-*.log.*
-
-
-.env
-.env.local
-.env.*.local
+backend/dist/
+frontend/dist/
+frontend/.next/
+frontend/.cache/
 
 
 .DS_Store
 Thumbs.db
+desktop.ini
 
 
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 
 coverage/
 *.lcov
+*.nyc_output
 
 
 *.tmp
-*.swp
-*.swo
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+docs/_build/
+docs/build/
 
 
-backend/node_modules/
-backend/dist/
+uploads/
+public/uploads/
 
 
-frontend/node_modules/
-frontend/dist/
-frontend/.next/
-frontend/.cache/
+*.pem
+*.key
+*.crt
+
