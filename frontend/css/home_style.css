@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 :root {
   --bg-color: #070707;
   --azul: #5170ff;
@@ -24,9 +25,7 @@ body {
   width: 13em;
   height: 2em;
   padding-bottom: 2px;
-  border-bottom: 2px solid;
-  border-color: var(--azul);
-
+  border-bottom: 2px solid var(--azul);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -42,12 +41,10 @@ body {
   height: 2em;
   width: auto;
   outline: none;
-  border-bottom: 2px solid;
-  border-color: transparent;
+  border-bottom: 2px solid transparent;
   background-color: transparent;
   color: var(--branco);
   font-size: 18px;
-
   transition: all 0.3s ease-in;
 }
 
@@ -69,7 +66,6 @@ body {
   width: 100%;
   height: 80vh;
   background-color: transparent;
-
   justify-self: center;
 }
 
@@ -82,18 +78,106 @@ body {
 
 .news {
   background-color: var(--cinza);
-  height: 100%;
   width: 40em;
   border-radius: 5px;
-
   margin-left: 1em;
+  height: 540px; /* Ajuste conforme a altura real de duas notícias */
+  overflow-y: auto;
+  padding-right: 4px;
+  box-sizing: border-box;
 }
+
+.news::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+.news::-webkit-scrollbar-thumb {
+  background: var(--azul);
+  border-radius: 4px;
+}
+
+.news::-webkit-scrollbar-thumb:hover {
+  background: #6a84ff;
+}
+
+/* Cards de notícia – garante que ocupem toda a largura e sem margens laterais */
+.card-noticia {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 15px 0;
+  background: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.card-noticia:hover {
+  border-color: var(--azul);
+}
+
+/* Ajuste para a imagem ou fallback */
+.card-noticia img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do card */
+.card-noticia .conteudo {
+  padding: 20px;
+}
+
+.card-noticia .fonte {
+  color: var(--azul);
+  margin: 0 0 10px 0;
+}
+
+.card-noticia h3 {
+  color: var(--branco);
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.card-noticia p {
+  color: #999;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+}
+
+.card-noticia .rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-noticia .data {
+  color: #666;
+}
+
+.card-noticia .botao {
+  background: var(--azul);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.card-noticia .botao:hover {
+  opacity: 0.8;
+}
+
 #divisor {
   display: flex;
   background-color: var(--azul);
   height: 1.5px;
   width: 100%;
-
   justify-self: center;
   margin: 2em 0 2em 0;
 }
@@ -103,39 +187,37 @@ body {
   color: var(--branco);
   font-weight: 500;
 }
+
 #glossario {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   height: auto;
 }
+
 .card {
   flex: 1;
-
   height: 12em;
   background-color: var(--cinza);
-  border: 1px solid;
-  border-color: transparent;
+  border: 1px solid transparent;
   border-radius: 5px;
-
   padding: 14px;
   align-items: baseline;
-
   transition: all 0.5s ease-in-out;
 }
+
 #glossario h2 {
   color: var(--branco);
   margin: 0px;
   font-size: 24px;
   font-weight: 400;
 }
+
 #glossario p {
   color: var(--branco);
-  font-size: 18;
+  font-size: 18px;
   font-weight: 300;
 }
-
-/*-----------------------Hovers-----------------------*/
 
 .header button:hover {
   color: var(--azul);
