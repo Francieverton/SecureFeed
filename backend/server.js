@@ -25,9 +25,9 @@ app.get('/api/teste', (req, res) => {
 app.get('/api/noticias', async (req, res) => {
     try {
         // Verifica se a chave da API está configurada
-        if (!process.env.NEWS_API_KEY || process.env.NEWS_API_KEY === 'sua_chave_aqui') {
+        if (!process.env.NEWS_API_KEY) {
             console.error('❌ NEWS_API_KEY não configurada no arquivo .env');
-            return res.status(500).json({ 
+            return res.status(500).json({
                 erro: 'Chave da API não configurada',
                 mensagem: 'Configure a chave no arquivo .env'
             });
@@ -60,7 +60,7 @@ app.get('/api/noticias', async (req, res) => {
     } catch (error) {
         console.error('❌ Erro ao acessar a NewsAPI:');
         console.error('Mensagem:', error.message);
-        
+
         // Se houver resposta da API com detalhes do erro, mostra também
         if (error.response) {
             console.error('Status HTTP:', error.response.status);
@@ -68,7 +68,7 @@ app.get('/api/noticias', async (req, res) => {
         }
 
         // Retorna um erro amigável para o frontend
-        res.status(500).json({ 
+        res.status(500).json({
             erro: 'Falha ao buscar notícias',
             detalhe: error.message,
             sugestao: 'Verifique sua chave da API e a conexão com a internet'
