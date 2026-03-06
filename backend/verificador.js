@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const areaResultado = document.querySelector('.result_verificacao');
 
     //---------------- CHAVE DE API DO GOOGLE SAFE BROWSING ---------------
-    const API_KEY = 'AIzaSyDQYcTaIHPZelScR4Qp_RyRApYdxK11_JE';
+    const API_KEY = 'API_KEY_AQUI';
 
     // ----------------- URL da API do Google Safe Browsing -----------------
     const API_URL = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${API_KEY}`;
