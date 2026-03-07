@@ -46,3 +46,15 @@
 .campo-link button:hover {
   opacity: 0.8;
 }
+
+/*-----------------------Responsividade-----------------------*/
+
+@media (max-width: 900px) {
+  .busca-link {
+    padding: 5em 0 1em 0;
+  }
+
+  .campo-link {
+    width: 100%;
+  }
+}
