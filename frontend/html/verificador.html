@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureFeed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home_style.css" />
+  <link rel="stylesheet" href="../css/verificador.css" />
+  <link rel="stylesheet" href="../css/result_verificacao.css" />
+
+  <link rel="icon" href="../css/imagens/secure_icon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <div class="header">
+    <img src="../css/imagens/secure_icon.svg" alt="SecureFeed-Logo" width="24px" height="24px" />
+    <button><a href="../../index.html">Home</a></button>
+    <button class="page-atual">Verificador</button>
+  </div>
+
+  <div class="busca-link">
+    <h1 id="title-glos">Insira o link que deseja verificar</h1>
+
+    <div class="campo-link">
+      <input type="url" placeholder="Cole seu link aqui" />
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="divisor"></div>
+
+  <div class="result_verificacao">
+    <h1 id="title-glos">Resultado da Verificação</h1>
+
+    <div class="card_result">
+      <div class="status-valido">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green"
+          stroke-width="2">
+          <path d="M20 6L9 17l-5-5" />
+        </svg>
+      </div>
+      <p class="status-text">Status: Seguro</p>
+      <p class="motivo-text">
+        O link passou por todas as verificações de segurança.
+      </p>
+    </div>
+
+    <div class="card_result">
+      <div class="status-invalido">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red"
+          stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+      <p class="status-text">Status: Suspeito</p>
+      <p class="motivo-text">
+        O link contém elementos suspeitos, como domínio desconhecido ou falta
+        de HTTPS.
+      </p>
+    </div>
+  </div>
+  <script src="../../backend/verificador.js"></script>
+</body>
+
+</html>
