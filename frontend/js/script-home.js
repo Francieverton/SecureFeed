@@ -37,8 +37,12 @@ async function carregarNoticias() {
     }
 }
 
+<<<<<<< HEAD
 /*function exibirNoticias(noticias, container) {
 
+=======
+function exibirNoticias(noticias, container) {
+>>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
     let html = '';
 
     noticias.forEach(noticia => {
@@ -102,6 +106,7 @@ async function carregarNoticias() {
     });
 
     container.innerHTML = html;
+<<<<<<< HEAD
 }
 */
 
@@ -158,4 +163,6 @@ function atualizarPreview(noticia) {
 
 
     
+=======
+>>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }

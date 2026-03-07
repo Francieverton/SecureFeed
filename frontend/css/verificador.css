@@ -1,0 +1,48 @@
+.busca-link {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.campo-link {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
+  width: 80%;
+}
+
+.campo-link input {
+  flex: 1;
+  background-color: var(--bg-color);
+  border: 1px solid var(--azul);
+  border-radius: 5px;
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  padding: 0.6em 1em;
+  outline: none;
+}
+
+.campo-link input::placeholder {
+  color: var(--branco);
+  opacity: 0.3;
+}
+
+.campo-link button {
+  background-color: var(--azul);
+  color: var(--branco);
+  border: none;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+/*-----------------------Hovers-----------------------*/
+
+.campo-link button:hover {
+  opacity: 0.8;
+}

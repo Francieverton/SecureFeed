@@ -1,0 +1,90 @@
+.result_verificacao {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_result {
+  background-color: var(--cinza);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 2.5em 3em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  transition: all 0.4s ease-in-out;
+  width: 75%;
+}
+
+.card_result p {
+  color: var(--branco);
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+.status-valido,
+.status-invalido {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.status-valido {
+  background-color: rgba(0, 191, 99, 0.12);
+  border: 2px solid rgba(0, 191, 99, 0.3);
+}
+
+.status-invalido {
+  background-color: rgba(255, 49, 49, 0.12);
+  border: 2px solid rgba(255, 49, 49, 0.3);
+}
+
+.status-valido svg,
+.status-invalido svg {
+  width: 52px;
+  height: 52px;
+}
+
+.status-valido svg {
+  stroke: var(--verde);
+}
+
+.status-invalido svg {
+  stroke: var(--vermelho);
+}
+
+.card_result .status-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--branco);
+  margin: 0;
+}
+
+.card_result .motivo-text {
+  color: var(--branco);
+  opacity: 0.5;
+}
+
+/*-----------------------Hovers-----------------------*/
+
+.card_result:hover {
+  border-color: var(--azul);
+}
+.status-valido:hover {
+  background-color: rgba(0, 191, 99, 0.22);
+  border-color: var(--verde);
+}
+
+.status-invalido:hover {
+  background-color: rgba(255, 49, 49, 0.22);
+  border-color: var(--vermelho);
+}
