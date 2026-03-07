@@ -21,12 +21,9 @@ body {
   font-family: var(--fonte-principal);
 }
 
-<<<<<<< HEAD
 a {
   text-decoration: none;
 }
-=======
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 .header {
   width: 13em;
   height: 2em;
@@ -47,12 +44,8 @@ a {
   height: 2em;
   width: auto;
   outline: none;
-<<<<<<< HEAD
   border-bottom: 2px solid ;
   border-color: transparent;
-=======
-  border-bottom: 2px solid transparent;
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
   background-color: transparent;
   color: var(--branco);
   font-size: 18px;
@@ -62,10 +55,7 @@ a {
 .header button a {
   color: inherit;
   text-decoration: none;
-<<<<<<< HEAD
   outline: none;
-=======
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }
 
 .page-atual a {
@@ -75,27 +65,16 @@ a {
 .header button.page-atual {
   color: var(--azul);
 }
-<<<<<<< HEAD
 .container {
   display: flex;
   width: 100%;
   height: 80vh; 
   gap: 20px;    
   align-items: flex-start; 
-=======
-
-.container {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  background-color: transparent;
-  justify-self: center;
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }
 
 .principal {
   background-color: var(--cinza);
-<<<<<<< HEAD
   flex: 2;          
   height: 100%;
   border-radius: 5px;
@@ -104,16 +83,10 @@ a {
   overflow-y: auto; 
   position: sticky; 
   top: 20px;
-=======
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }
 
 .news {
   background-color: var(--cinza);
-<<<<<<< HEAD
   flex: 1;          /* Ocupa 1 parte do espaço (mais estreita) */
   width: auto;      /* Remove o width fixo de 40em para ser responsivo */
   border-radius: 5px;
@@ -135,31 +108,10 @@ a {
 
 .news::-webkit-scrollbar-thumb,
 .principal::-webkit-scrollbar-thumb {
-=======
-  width: 40em;
-  border-radius: 5px;
-  margin-left: 1em;
-  height: 540px; /* Ajuste conforme a altura real de duas notícias */
-  overflow-y: auto;
-  padding-right: 4px;
-  box-sizing: border-box;
-}
-
-.news::-webkit-scrollbar {
-  width: 6px;
-}
-
-.news::-webkit-scrollbar-track {
-  background: #181818;
-}
-
-.news::-webkit-scrollbar-thumb {
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
   background: var(--azul);
   border-radius: 4px;
 }
 
-<<<<<<< HEAD
 .news::-webkit-scrollbar-thumb:hover,
 .principal::-webkit-scrollbar-thumb:hover {
   background: #6a84ff;
@@ -186,27 +138,6 @@ a {
 }
 
 
-=======
-.news::-webkit-scrollbar-thumb:hover {
-  background: #6a84ff;
-}
-
-/* Cards de notícia – garante que ocupem toda a largura e sem margens laterais */
-.card-noticia {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 0 15px 0;
-  background: #181818;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.card-noticia:hover {
-  border-color: var(--azul);
-}
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 
 /* Ajuste para a imagem ou fallback */
 .card-noticia img {
@@ -226,14 +157,8 @@ a {
 }
 
 .card-noticia h3 {
-<<<<<<< HEAD
   font-size: 1rem; /* Diminuído para caber melhor na lateral */
   margin: 0;
-=======
-  color: var(--branco);
-  margin: 0 0 10px 0;
-  font-size: 1.2rem;
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }
 
 .card-noticia p {
@@ -262,14 +187,8 @@ a {
   transition: opacity 0.3s;
 }
 
-<<<<<<< HEAD
 
 
-=======
-.card-noticia .botao:hover {
-  opacity: 0.8;
-}
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 
 #divisor {
   display: flex;
@@ -304,11 +223,8 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 #glossario h2 {
   color: var(--branco);
   margin: 0px;
@@ -322,11 +238,8 @@ a {
   font-weight: 300;
 }
 
-<<<<<<< HEAD
 /*---------------------hovers-------------------------*/
 
-=======
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 .header button:hover {
   color: var(--azul);
   cursor: pointer;
@@ -334,7 +247,6 @@ a {
 
 .card:hover {
   border-color: var(--azul);
-<<<<<<< HEAD
 }
 
 .card-noticia .botao:hover {
@@ -483,6 +395,4 @@ a {
     border-top: 2px solid var(--cinza);
     background-color: var(--bg-color);
   }
-=======
->>>>>>> 64b8703ac4c88bb443077972b579ea89367a7397
 }
